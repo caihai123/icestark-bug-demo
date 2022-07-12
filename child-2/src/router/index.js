@@ -18,6 +18,10 @@ VueRouter.prototype.push = function push(location, onResolve, onReject) {
 
 const routes = [
   {
+    path: "/",
+    redirect: "/index",
+  },
+  {
     path: "/index",
     name: "Home",
     component: Home,
